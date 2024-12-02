@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="wather.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .weather{
+            color: blue;
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="" class="logo_anime">MY WHATHER</a>
+            </div>
+            <nav class="nav"> 
+                <div class="search_sity">
+                    <input type="text" placeholder="введите название города" class="city">
+                    <button class="btn">Поиск</button>
+                </div>
+                <!-- <a href=""><img src="./image/menu(5).png" alt="menu"> Меню</a>
+                <button href="" class="reg"><img src="./image/user(4).png" alt="">Аккаунт</button>
+                <a href=""><img src="./image/shopping-cart(5).png" alt=""> Корзина</a>
+                <a href=""><img src="./image/customer-support(2).png" alt=""> Поддержка</a> -->
+            </nav>
+
+            <img src="file.png" alt="" class="wether_png">
+        </div>
+    </header>
+    <nav class="nav_today"> 
+        <button id="button_today" class="button_today">Today</button>
+        <button id="button_5_days" class="button_5_days">5-days forecast</button> 
+    </nav>
+    <div class="weather" id="weather">
+
+    </div>
+    <div class="weather_5days" id="weather_5days">
+
+    </div>
+
+
+    <div class="weather_defoult" id="weather_defoult">
+        <h1>Nearby Places</h1><br>
+        <div id="popular_weather1"  class="popular_weather"></div>
+        <div id="popular_weather2"  class="popular_weather"></div>
+        <div id="popular_weather3"  class="popular_weather"></div>
+        <div id="popular_weather4"  class="popular_weather"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="whather.js"></script>
+</body>
+</html>
